@@ -66,7 +66,7 @@ llamado() {
 var X = 0;
 var listado = [];
 
-class Mascota {
+clss Mascota {
     constructor(animal, nombre, peso, sonido, ID) {
         this.animal = animal,
             this.nombre = nombre,
@@ -107,6 +107,12 @@ class Perro extends Mascota {
 
 var nestor = new Mascota("gato", "nestor", 18, "miau", true)
 
-var martina = new Mascota("gato", "martina", 13, "miaurauuuuu", true)
+var martina = new Mascota("g", "martina", 13, "miaurauuuuu", true)
 
 var dylan = new Perro("perro", "dylan", 34, "guau worf", true, "labrador")
+
+//var animales = [nestor, martina, dylan]
+
+animales.forEach(element => {
+    element.saludar()
+});
